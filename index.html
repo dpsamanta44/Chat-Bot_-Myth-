@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Myth - Your Digital Companion</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 2rem auto; }
+    #chatbox { border: 1px solid #191887; padding: 1rem; height: 400px; overflow-y: auto;background-color: aquamarine; }
+    .message { margin: 1rem 0; }
+    .user { color: blue; }
+    .bot { color: green; }
+    input[type="text"] { width: 80%; padding: 0.5rem; }
+    button { padding: 0.5rem 1rem; }
+    button:hover { background-color: rgb(105, 101, 101); cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Talk to 'Myth'</h1>
+  <div id="chatbox"></div>
+  <input type="text" id="userInput" placeholder="Type your message here..." />
+  <button onclick="sendMessage()">Send</button>
+  <script src="app.js"></script>
+</body>
+</html>
